@@ -1,0 +1,97 @@
+#btn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: xx-large;
+}
+.poop{
+    display: flexbox;
+    flex-direction: column;
+   
+    height: 31rem;
+    width: max-content;
+    z-index: -1;
+    background-color: black;
+    margin-top: 50px;
+    border-radius: 31px;
+    padding: 1rem;
+    margin: 2rem;
+    opacity: 84%;
+    border: .2rem solid purple;
+    box-shadow: black 1px 1 0;
+}
+.poop img{
+  
+
+    background-size: cover;
+    width: auto;
+    height: 17rem;
+    margin: 2rem;
+    text-align: center;
+}
+.poop li{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #80808036;
+    text-align: center;
+    ;
+}
+
+.poop ul{
+    width: 20rem;
+}
+#sun_pop{
+    background: url('../img/planet/sun.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Nep_pop{
+    background: url('../img/planet/nep.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ura_pop{
+    background: url('../img/planet/ura.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#earth_pop{
+    background: url('../img/planet/earth.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ven_pop{
+    background: url('../img/planet/ven.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mar_pop{
+    background: url('../img/planet/mars.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sat_pop{
+    background: url('../img/planet/sat.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#j_pop{
+    background: url('../img/planet/jup.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mer_pop{
+    background: url('../img/planet/mer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }

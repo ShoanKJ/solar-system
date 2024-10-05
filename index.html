@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title dir="ltr">SOLAR SYSTEN</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <link rel="stylesheet" href="css/s.css">
+  </head>
+  <body class="opening hide-UI view-2D zoom-large data-close controls-close">
+    
+    <div id="navbar">
+      <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
+      <h1>SOLAR SYSTEM</h1>
+      <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
+    </div>
+    <div id="data">
+      <a class="sun" title="sun" href="#sunspeed">Sun</a>
+      <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
+      <a class="venus" title="venus" href="#venusspeed">Venus</a>
+      <a class="earth active" title="earth" href="#earthspeed">Earth</a>
+      <a class="mars" title="mars" href="#marsspeed">Mars</a>
+      <a class="jupiter" title="jupiter" href="#jupiterspeed">Jupiter</a>
+      <a class="saturn" title="saturn" href="#saturnspeed">Saturn</a>
+      <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
+      <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
+    </div>
+    <div id="controls">
+      <label class="set-view">
+        <input type="checkbox">
+      </label>
+      <label class="set-zoom">
+        <input type="checkbox">
+      </label>
+      <label>
+        <input type="radio" class="set-speed" name="scale" checked>
+        <span>Speed</span>
+      </label>
+      <label>
+        <input type="radio" class="set-size" name="scale">
+        <span>Size</span>
+      </label>
+      <label>
+        <input type="radio" class="set-distance" name="scale">
+        <span>Distance</span>
+      </label>
+    </div>
+    <div id="universe" class="scale-stretched">
+      <div id="galaxy">
+        <video class="bg-video" autoplay loop muted>
+          <source src="img/planet/sky.mp4" type="video/mp4">
+        </video>
+        <div id="solar-system" class="earth">
+          <div id="mercury" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt><button id="btn" popovertarget="mer_pop">Mercury</button></dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="venus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt><button id="btn" popovertarget="ven_pop">Venus</button></dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="earth" class="orbit">
+            <div class="pos">
+              <div class="orbit">
+                <div class="pos">
+                  <div class="moon"></div>
+                </div>
+              </div>
+              <div class="planet">
+                <dl class="infos">
+                  <dt><button id="btn" popovertarget="earth_pop">Earth</button></dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="mars" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt><button id="btn" popovertarget="mar_pop">Mars</button></dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="jupiter" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt><button id="btn" popovertarget="j_pop">Jupiter</button></dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="saturn" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <div class="ring"></div>
+                <dl class="infos">
+                  <dt><button id="btn" popovertarget="sat_pop">Saturn</button></dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="uranus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt><button id="btn" popovertarget="ura_pop">Uranus</button></dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="neptune" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt><button id="btn" popovertarget="Nep_pop">Neptune</button></dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="sun">
+            <dl class="infos">
+              <dt><button id="btn" popovertarget="sun_pop">sun</button></dt>
+              <dd><span></span></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+
+    <div id="sun_pop" class="poop" popover>
+      
+      <p>The Sun</p>
+      <ul>
+        <li>The Sun is a G-type main-sequence star (G2V) at the center of our solar system.</li>
+        <li>It is about 4.6 billion years old and contains 99.86% of the solar system’s mass.</li>
+        <li>The Sun's energy is produced through nuclear fusion, converting hydrogen into helium.</li>
+        <li>It has a surface temperature of around 5,500°C (9,932°F).</li>
+      </ul>
+    </div>
+    
+    <div id="Nep_pop" class="poop" popover >
+      
+      <p>Neptune</p>
+      <ul>
+        <li>Neptune is the eighth planet from the Sun and the most distant in our solar system.</li>
+        <li>It has a deep blue color due to the presence of methane in its atmosphere.</li>
+        <li>Neptune is known for having the strongest winds in the solar system, reaching speeds of 2,100 km/h (1,300 mph).</li>
+        <li>It has 14 known moons, the largest being Triton.</li>
+      </ul>
+    </div>
+    
+    <div id="ura_pop" class="poop" popover>
+      
+      <p>Uranus</p>
+      <ul>
+        <li>Uranus is the seventh planet from the Sun and has a pale blue color due to methane in its atmosphere.</li>
+        <li>It rotates on its side, making it unique among the planets.</li>
+        <li>Uranus has a ring system, though less prominent than Saturn's, and 27 known moons.</li>
+        <li>The average temperature on Uranus is -224°C (-371°F), making it one of the coldest planets.</li>
+      </ul>
+    </div>
+    
+    <div id="earth_pop" class="poop" popover>
+      
+      <p>Earth</p>
+      <ul>
+        <li>Earth is the third planet from the Sun and the only planet known to support life.</li>
+        <li>It has a diverse climate system, ranging from polar ice caps to tropical rainforests.</li>
+        <li>About 71% of Earth's surface is covered by water, with land making up the rest.</li>
+        <li>Earth has one natural satellite, the Moon, which influences tides and stabilizes Earth's axial tilt.</li>
+      </ul>
+    </div>
+    
+    <div id="mar_pop" class="poop" popover>
+      
+      <p>Mars</p>
+      <ul>
+        <li>Mars is the fourth planet from the Sun and is often called the "Red Planet" due to iron oxide on its surface.</li>
+        <li>It has the largest volcano in the solar system, Olympus Mons, which is about three times the height of Mount Everest.</li>
+        <li>Mars has polar ice caps made of both water and dry ice (frozen carbon dioxide).</li>
+        <li>Mars is a prime candidate for human exploration due to its similarities to Earth, despite being cold and having a thin atmosphere.</li>
+      </ul>
+    </div>
+    
+    <div id="ven_pop" class="poop" popover>
+      
+      <p>Venus</p>
+      <ul>
+        <li>Venus is the second planet from the Sun and is similar in size and structure to Earth.</li>
+        <li>It has a thick atmosphere composed mostly of carbon dioxide, which causes a runaway greenhouse effect.</li>
+        <li>Surface temperatures can reach 467°C (872°F), making Venus the hottest planet in the solar system.</li>
+        <li>Venus has a day longer than its year; it takes 243 Earth days to rotate once but only 225 Earth days to orbit the Sun.</li>
+      </ul>
+    </div>
+    
+    <div id="sat_pop" class="poop" popover>
+      
+      <p>Saturn</p>
+      <ul>
+        <li>Saturn is the sixth planet from the Sun and is best known for its stunning ring system.</li>
+        <li>Its rings are made mostly of ice and rock particles, some of which are as small as a grain of sand.</li>
+        <li>Saturn is a gas giant, composed mainly of hydrogen and helium.</li>
+        <li>It has 83 known moons, including Titan, which has a thick atmosphere and liquid methane lakes.</li>
+      </ul>
+    </div>
+    
+    <div id="j_pop" class="poop" popover>
+      
+      <p>Jupiter</p>
+      <ul>
+        <li>Jupiter is the largest planet in the solar system, with a mass over 300 times that of Earth.</li>
+        <li>It has a famous storm called the Great Red Spot, which has been raging for over 300 years.</li>
+        <li>Jupiter is a gas giant composed mostly of hydrogen and helium.</li>
+        <li>It has 95 known moons, including Ganymede, the largest moon in the solar system.</li>
+      </ul>
+    </div>
+    
+    <div id="mer_pop" class="poop" popover>
+      
+      <p>Mercury</p>
+      <ul>
+        <li>Mercury is the closest planet to the Sun and the smallest in our solar system.</li>
+        <li>It has no atmosphere to retain heat, causing extreme temperature variations between day and night.</li>
+        <li>Mercury has many craters due to its lack of an atmosphere to protect it from meteoroid impacts.</li>
+        <li>A year on Mercury lasts just 88 Earth days, but its day is the equivalent of 176 Earth days.</li>
+      </ul>
+    </div>
+    
+    
+  
+    
+
+    
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    if (typeof jQuery == 'undefined') { 
+      document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+
+
+  </body>
+  
+</html>
